@@ -91,20 +91,19 @@ The server can be restarted on RHEL based linux systems with
 ## Testing on Mac Locally
 You can now go to the url of your XSOAR server. For instance in the Chrome browser on Mac OS.
 
-![Chrome untrusted](invalid-cert-chrome.png)
+<img src="invalid-cert-chrome.png" alt="alt text" width="500px">
 
 The CA you created in the first step can be trusted by adding it to the Mac keychain.  For Windows see the links in the References section.
 
 Copy the `RootCA.pem` file from the XSOAR server to your local machine and add it to the keychain.  Open the Keychain Access app and select File >> Import Items.  
 
-![custom cert](import-cert.png)
+<img src="import-cert.png" alt="alt text" width="500px">
 
 Select the RootCA.pem file you just created. Once it is imported double click on the certificate to open up its settings in Keychain Access.  Select to Trust Always and then exit.  You will be prompted for your password.
 
-![trust cert](always-trust.png) 
-
+<img src="always-trust.png" alt="alt text" width="500px">
 You should now be able to navigate to the XSOAR page and see a secure lock for HTTPS served with your new custom cert.
 
 ### References
-https://gist.github.com/cecilemuller/9492b848eb8fe46d462abeb26656c4f8
-https://docs.paloaltonetworks.com/cortex/cortex-xsoar/5-5/cortex-xsoar-admin/installation/post-installation-checklist/https-with-a-signed-certificate
+* https://gist.github.com/cecilemuller/9492b848eb8fe46d462abeb26656c4f8
+* https://docs.paloaltonetworks.com/cortex/cortex-xsoar/5-5/cortex-xsoar-admin/installation/post-installation-checklist/https-with-a-signed-certificate
