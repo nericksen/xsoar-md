@@ -3,9 +3,16 @@
 You can use a gmail account to test the XSOAR mail listener and run phishing excursuses.
 You will need to set insecure apps in the gmail account.  
 
-![Settings](account-settings.png)
-![Settings](account-security-settings.png)
-![Insecure](insecure-apps.png)
+<img src="account-settings.png" alt="alt text" width="500px">
+
+The security settings are located on the left hand menu.
+
+<img src="account-security-settings.png" alt="alt text" width="500px">
+
+The insecure apps feature can then be turned on to enable testing.
+This should only be done with a testing account!
+
+<img src="insecure-apps.png" alt="alt text" width="500px">
 
 The integration settings are then as follows
 
