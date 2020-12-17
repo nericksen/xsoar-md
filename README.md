@@ -5,3 +5,4 @@ The unofficial markdown documents of XSOAR.
 
 * [Self Signed XSOAR Certificates](Self-Signed-XSOAR-Certs/self-signed-certs.md)
 * [GMail Mail Listener](Gmail-Mail-Listener/gmail-mail-settings.md)
+* [Self Deployed Azure Application](Self-Deployed-Azure-Apps/README.md)
