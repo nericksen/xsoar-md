@@ -17,10 +17,10 @@ Here is a detailed step by step breakdown a well for your reference.  This is sp
 <img src="register-app.png" alt="alt text" width="500px">
 
 3. The following parameters are then needed to configure the XSOAR MS Graph User integration
-Azure Name -> XSOAR integration
-Application (client) ID -> ID
-Directory (tenant) ID -> Token
-Certificate and Secret -> Key
+* Azure Name -> XSOAR integration
+* Application (client) ID -> ID
+* Directory (tenant) ID -> Token
+* Certificate and Secret -> Key
 
 You can get these parameters from azure here
 
@@ -28,7 +28,7 @@ You can get these parameters from azure here
 
 4. Check the "Use a self-deployed Azure application" checkbox on xsoar integration.  You should now have ID, Token, Key, And redirect uri also filled in.
 
-<img src="graph-user-integration-params.png" alt="alt text" width="500px">
+<img src="graph-user-intergation-params.png" alt="alt text" width="500px">
 
 5. You then need to generate the Authorization Code.  This is done by crafting a user authorization link documented here: https://xsoar.pan.dev/docs/reference/articles/microsoft-integrations---authentication
 
@@ -46,8 +46,8 @@ Once that is complete you will be redirected to the redirect URI and will receiv
 
 You should confirm the required permissions are assigned to the app in azure and admin consent is granted on them to ensure all integration commands will run as expected
 
-Directory.Read.All - Delegated
-User.ReadWrite.All - Application
-User.Read - Delegated
+* Directory.Read.All - Delegated
+* User.ReadWrite.All - Application
+* User.Read - Delegated
 
 <img src="permissions.png" alt="alt text" width="500px">
