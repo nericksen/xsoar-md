@@ -1,0 +1,6 @@
+
+# Link to generate HEC token
+
+
+# Curl example to enter sample data
+curl -k https://198.zzz.xyz/event -H "Authorization: Splunk 8a03274c-b1d4-4dce-94aa-6636fde60914" -d '{"event": "hola world"}'
