@@ -32,15 +32,10 @@ A domain would have to be either a valid public domain, or you will need to modi
 Example `/etc/hosts` for `fake1.local`
 
 ```
-##
 # Host Database
-#
-# localhost is used to configure the loopback interface
-# when the system is booting.  Do not change this entry.
-##
-127.0.0.1       localhost
 
-52.x.y.z fake1.local
+127.0.0.1       localhost
+52.x.y.z        fake1.local
 ```
 
 
