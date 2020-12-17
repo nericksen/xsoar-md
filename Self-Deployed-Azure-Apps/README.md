@@ -42,6 +42,8 @@ This will prompt for the admin user to sign in and grant the app the appropriate
 
 Once that is complete you will be redirected to the redirect URI and will receive an authorization code in the query parameters of the uri.  This value should be used in the xsoar integration under Authorization Code.  Note there are multiple query parameters returned you should just copy the code value
 
+<img src="auth-code.png" alt="alt text" width="500px">
+
 6. Save the integration settings and Test successful setup by running the !msgraph-user-test command from the xsoar cli.
 
 You should confirm the required permissions are assigned to the app in azure and admin consent is granted on them to ensure all integration commands will run as expected
