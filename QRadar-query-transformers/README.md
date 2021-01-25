@@ -24,6 +24,7 @@ A combination of the `concat` and `join` transformers can be used to get the job
 
 This new key set to context can then be used as an input into the QRadar query automation.
 
+<img src="imgs/new-url-string.png" height="500px" alt="" />
 
 ```
 !qradar-searches query_expression=`SELECT "username", "Full URL", "sourceip" FROM events WHERE (URL ILIKE ${NEW_URL_KEY}) LAST 24 HOURS.`
