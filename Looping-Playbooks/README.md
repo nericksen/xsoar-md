@@ -8,7 +8,7 @@ An overview of subplaybook loops can be found [here](https://docs.paloaltonetwor
 In this example a playbook is created to demonstrate the basics of creating a playbook which can then be used to loop through an array of items and perform some action.
 Specifcally an array of names is used as input to the subplaybook which prints out a greeting using each name.
 
-<img src="imgs/playbook-overview.png" alt="alt text" width="500px">
+<img src="imgs/playbook-overview.png" alt="alt text" height="500px">
 
 First the an array of names is created by splitting a string of comma seperated names into an array.
 The array of names is then used as an input into the subplaybook.
