@@ -12,7 +12,8 @@ Specifcally an array of names is used as input to the subplaybook which prints o
 First the an array of names is created by splitting a string of comma seperated names into an array.
 The array of names is then used as an input into the subplaybook.
 
-<img src="imgs/looping-inputs.png" alt="alt text" width="500px">
+<img src="imgs/names-context.png" alt="alt text" width="500px">
+<img src="imgs/looping-input-to-subplaybook.png" alt="alt text" width="500px">
 
 The subplaybook is looped through for each name in the list a greeting is printed out in the "LoopedPrintingPlaybook".
 The "For Each" setting must be checked in the Looping section of the subplaybook automation block of the main playbook.
