@@ -12,7 +12,7 @@ Specifcally an array of names is used as input to the subplaybook which prints o
 First the an array of names is created by splitting a string of comma seperated names into an array.
 The array of names is then used as an input into the subplaybook.
 
-<img src="imgs/names-context.png" alt="alt text" height="500px">
+<img src="imgs/names-context.png" alt="alt text" height="300px">
 <img src="imgs/looping-input-to-subplaybook.png" alt="alt text" height="500px">
 
 The subplaybook is looped through for each name in the list a greeting is printed out in the "LoopedPrintingPlaybook".
