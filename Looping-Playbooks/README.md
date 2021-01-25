@@ -12,8 +12,8 @@ Specifcally an array of names is used as input to the subplaybook which prints o
 First the an array of names is created by splitting a string of comma seperated names into an array.
 The array of names is then used as an input into the subplaybook.
 
-<img src="imgs/names-context.png" alt="alt text" width="500px">
-<img src="imgs/looping-input-to-subplaybook.png" alt="alt text" width="500px">
+<img src="imgs/names-context.png" alt="alt text" height="500px">
+<img src="imgs/looping-input-to-subplaybook.png" alt="alt text" height="500px">
 
 The subplaybook is looped through for each name in the list a greeting is printed out in the "LoopedPrintingPlaybook".
 The "For Each" setting must be checked in the Looping section of the subplaybook automation block of the main playbook.
@@ -22,7 +22,10 @@ The "For Each" setting must be checked in the Looping section of the subplaybook
 The inputs for the subplaybook are defined when it is created. 
 Playbook inputs are documented [here](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/playbook-inputs-and-outputs)
 
+
 Here an input is defined called `name` for the subplaybook.
+
+
 <img src="imgs/subplaybook-inputs-defined.png" alt="alt text" width="500px">
 
 Automation steps can utilize the inputs by `${inputs.name}`.
