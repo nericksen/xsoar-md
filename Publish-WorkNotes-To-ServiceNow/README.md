@@ -7,7 +7,10 @@ This is documented [here](https://xsoar.pan.dev/docs/reference/integrations/serv
 
 Warroom entries can also be mirrored as work notes in SNOW by adding a specfic tag to the entry.
 For playbook tasks this can be defined within the playbook task editor.
+
+
 <img src="imgs/snow_tag.png" width="400px"/>
+
 
 This is sufficent for most use cases, but at times it is useful for the analyst to manually add notes during the course of an investigation.
 The "Service Now Ticket" layout provided by the OOTB Service Now content pack in the XSOAR marketplace provides analysts with a quick way to create a note directly from a layout.
