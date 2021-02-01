@@ -1,0 +1,31 @@
+commonfields:
+  id: 6debed0e-5f66-4815-8970-708d4a8fbeb2
+  version: 19
+vcShouldKeepItemLegacyProdMachine: false
+name: PublishNotesToServiceNow
+script: |+
+  entries = demisto.executeCommand("getEntries", {"filter": {"categories": ["notes"]}})
+
+  note_ids = []
+
+  for entry in entries:
+      tags = entry["Tags"]
+      if tags is None or "comments" not in tags:
+          note_ids.append(entry["ID"])
+
+  demisto.executeCommand("setEntriesTags", {"entryIDs":note_ids,"entryTags":"comments"})
+  demisto.results(note_ids)
+  if len(note_ids) > 0:
+      demisto.results(f"Set Comments Tag for {note_ids}")
+  else:
+      demisto.results("No new notes to publish")
+
+type: python
+tags: []
+enabled: true
+scripttarget: 0
+subtype: python3
+pswd: ""
+runonce: false
+dockerimage: demisto/python3:3.9.1.15759
+runas: DBotWeakRole
