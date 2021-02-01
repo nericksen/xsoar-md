@@ -44,3 +44,5 @@ Buttons and layouts are discussed further [here](https://docs.paloaltonetworks.c
 
 The complete `PublishNotesToServiceNow` is attached as a yaml file.
 
+
+<img src="imgs/snow-publish.png" width="400px"/>
