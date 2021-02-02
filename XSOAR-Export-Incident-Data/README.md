@@ -50,4 +50,5 @@ curl --insecure -X GET "https://${SERVER_IP}:443/incident/csv/incidents_report_T
 ```
 
 There is also a "Demisto REST API" integration which can facilitate demisto API calls and can be configured within the XSOAR UI.
+These API calls can then be used within playbooks as a part of backup workflows.
 
