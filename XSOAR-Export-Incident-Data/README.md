@@ -1,6 +1,6 @@
 # Exporting Incident Data
 
-XSOAR is an API driven tool. Almost all functionality within the tool can be driven by API calls. Data is easily transferred between systems using JSON or CSV files which contain exports of XSOAR incidents and data.
+XSOAR is an API driven tool. Almost all functionality within the tool can be controlled by API calls. Data is easily transferred between systems using JSON or CSV files which contain exports of XSOAR incidents and data.
 
 
 ### Export Data as a Job
@@ -19,7 +19,7 @@ A playbook can be created which can perform these operations and which can be co
 You can also manually go into the UI and export incidents into a CSV file directly in the incidents tab.
 The columns to export can be configured by selecting from the various incident fields
 
-<img src="imgs/export-ui.png" width="400px"/>
+<img src="imgs/export-ui.png" width="600px"/>
 
 
 ### Batch Export Incidents (API)
