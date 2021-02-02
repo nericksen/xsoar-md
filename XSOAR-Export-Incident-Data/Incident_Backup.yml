@@ -1,0 +1,144 @@
+id: cb6e56c5-76fd-44b3-87b5-0ac4dd97729c
+version: 6
+vcShouldKeepItemLegacyProdMachine: false
+name: Incident Backup
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: da44d659-a854-4c38-84d5-f5c87a43dca1
+    type: start
+    task:
+      id: da44d659-a854-4c38-84d5-f5c87a43dca1
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+  "1":
+    id: "1"
+    taskid: 8e8f0fc3-1deb-4c4d-8c37-2b60fdfe3ee8
+    type: regular
+    task:
+      id: 8e8f0fc3-1deb-4c4d-8c37-2b60fdfe3ee8
+      version: -1
+      name: Query for Closed Incidents (past 7 days)
+      description: Gets a list of incident objects and the associated incident outputs
+        that match the specified query and filters. The results are returned in a
+        structured data file.
+      scriptName: GetIncidentsByQuery
+      type: regular
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "2"
+    scriptarguments:
+      NonEmptyFields: {}
+      fromDate:
+        simple: 7 days ago
+      incidentTypes: {}
+      includeContext: {}
+      limit: {}
+      outputFormat:
+        simple: json
+      pageSize: {}
+      populateFields: {}
+      query:
+        simple: status:closed
+      timeField: {}
+      toDate: {}
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 210
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+  "2":
+    id: "2"
+    taskid: f0de4589-edab-4a7c-8192-b632da60caea
+    type: regular
+    task:
+      id: f0de4589-edab-4a7c-8192-b632da60caea
+      version: -1
+      name: Send email of data
+      description: Sends an email.
+      script: '|||send-mail'
+      type: regular
+      iscommand: true
+      brand: ""
+    scriptarguments:
+      additionalHeader: {}
+      attachCIDs: {}
+      attachIDs:
+        simple: ${File.EntryID}
+      attachNames: {}
+      bcc: {}
+      body:
+        simple: Attached is a sample of XSOAR incident data
+      cc: {}
+      htmlBody: {}
+      raw_message: {}
+      subject:
+        simple: Backup XSOAR Incident Data - Example
+      templateParams: {}
+      to:
+        simple: ${inputs.EmailTo}
+      transientFile: {}
+      transientFileCID: {}
+      transientFileContent: {}
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 410
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 455,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
+inputs:
+- key: EmailTo
+  value:
+    simple: alice@demistone.onmicrosoft.com
+  required: false
+  description: The email address to mail the results to
+  playbookInputQuery: null
+outputs: []

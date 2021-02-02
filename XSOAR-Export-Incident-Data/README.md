@@ -52,3 +52,11 @@ curl --insecure -X GET "https://${SERVER_IP}:443/incident/csv/incidents_report_T
 There is also a "Demisto REST API" integration which can facilitate demisto API calls and can be configured within the XSOAR UI.
 These API calls can then be used within playbooks as a part of backup workflows.
 
+
+### Example Playbook
+Attached is an example playbook which leverages the `GetIncidentsByQuery` automation to generate a JSON file of incident data which is emailed off to a specfied email address.
+The email address is configured as a playbook input.
+Once configured the playbook can be attached to a new incident and run.
+
+<img src="imgs/backup-playbook.png" width="500px" />
+
