@@ -19,7 +19,7 @@ A playbook can be created which can perform these operations and which can be co
 You can also manually go into the UI and export incidents into a CSV file directly in the incidents tab.
 The columns to export can be configured by selecting from the various incident fields
 
-<img src="imgs/export-ui.png" height="400px"/>
+<img src="imgs/export-ui.png" width="400px"/>
 
 
 ### Batch Export Incidents (API)
