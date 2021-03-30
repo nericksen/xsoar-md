@@ -9,6 +9,7 @@ The unofficial markdown documents of XSOAR.
 * [XSOAR Installer Curl](XSOAR-Installer-Curl)
 * [XSOAR Create Incident with File via API](XSOAR-Create-Incident-with-File-via-API)
 * [Looping Playbooks](Looping-Playbooks)
+* [SLO with Azure AD](Single-Logout-with-Azure-AD-IDP)
 
 
 ### 3rd Party Tools
