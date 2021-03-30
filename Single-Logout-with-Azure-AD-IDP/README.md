@@ -20,7 +20,7 @@ This requires that the IDP (Azure AD) public key be entered into the "IdP public
 The "IdP private key (pem format)" can be generated according to our docs for ADFS SLO
 https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/users-and-roles/authenticate-users-with-saml-20/set-up-adfs-as-the-identity-provider-using-saml-20/set-up-saml-logout.html
 
-It should be possible to use any unencrypted private key here in x509 format.
+It should be possible to use any unencrypted private key here in pem format.
 Note this is technically the SP private key.
 
 When creating the non Gallery Application in Azure AD the SAML token is set to only "Sign SAML Assertion" by default.
