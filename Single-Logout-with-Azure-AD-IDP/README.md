@@ -10,6 +10,8 @@ You can use the test button from within Azure AD to ensure proper functioning.
 
 <img src="imgs/test-azure.png" width="500px">
 
+Hint: You can test the functioning of SSO without signing the request and verifying the response in order to simplify debugging should any issues arise.
+
 In order for SLO to function it is required to select the "Sign request and verify response signature" on the SAML 2.0 integration in XSOAR.
 This requires that the IDP (Azure AD) public key be entered into the "IdP public certificate"  SAML 2.0 XSOAR integration parameter and can be retrieved from the Azure AD here
 
