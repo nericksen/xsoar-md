@@ -48,7 +48,7 @@ https://<demisto-url>/saml-logout
 
 There is no need to check the following parameter or specify nameID format
 
-<img src="name-id-not-needed.png" width="500px">
+<img src="imgs/name-id-not-needed.png" width="500px">
 
 SLO should then function as expected.
 
