@@ -2,20 +2,23 @@
 
 The SAML 2.0 integration allows for connecting XSOAR to IDPs for authentication and RBAC purposes.
 
-Documentation for setting up SAML SSO with various IDPs can be found [here](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/users-and-roles/authenticate-users-with-saml-20.html)
+Documentation for setting up SAML SSO with Azure AD can be found [here](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/users-and-roles/authenticate-users-with-saml-20/microsoft-azure-as-the-identity-provider-using-saml-20.html)
 
 This guide intends to enhance the Azure AD portion around Single Logout.
 A prerequisite is setting up SSO and confirming it is operational as described in the link above.
+You can use the test button from within Azure AD to ensure proper functioning.
 
-In order for SLO to function It is required to select the "Sign request and verify response signature" on the SAML 2.0 integration in XSOAR.
-This requires that the IDP (Azure AD) public key be entered into the "IdP public certificate" XSOAR integration parameter and can be retrieved from the Azure AD here
+<img src="imgs/test-azure.png" width="500px">
+
+In order for SLO to function it is required to select the "Sign request and verify response signature" on the SAML 2.0 integration in XSOAR.
+This requires that the IDP (Azure AD) public key be entered into the "IdP public certificate"  SAML 2.0 XSOAR integration parameter and can be retrieved from the Azure AD here
 
 <img src="imgs/download-azure-public-key.png" width="500px">
 
 The "IdP private key (pem format)" can be generated according to our docs for ADFS SLO
 https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/users-and-roles/authenticate-users-with-saml-20/set-up-adfs-as-the-identity-provider-using-saml-20/set-up-saml-logout.html
 
-It should be possible to use any unencrypted private key here.
+It should be possible to use any unencrypted private key here in x509 format.
 Note this is technically the SP private key.
 
 When creating the non Gallery Application in Azure AD the SAML token is set to only "Sign SAML Assertion" by default.
