@@ -25,9 +25,9 @@ When creating the non Gallery Application in Azure AD the SAML token is set to o
 
 This needs to be updated to be "Sign SAML Response and Assertion" on the Azure AD side.
 
-<img src="imgs/edit-signing-settings" width="500px">
+<img src="imgs/edit-signing-settings.png" width="500px">
 
-<img src="imgs/sign-response-and-assertion" width="500px">
+<img src="imgs/sign-response-and-assertion.png" width="500px">
 
 This is based on the SAML 2.0 integration parameters available on XSOAR server v6.0.
 
@@ -36,7 +36,7 @@ In v6.1 you can chose to selectively sign the response, assertion or both in the
 
 The "IdP Single Logout URL" parameter on the SAML 2.0 XSOAR integration can then be grabbed from
 
-<img src="imgs/azure-logout-url" width="500px">
+<img src="imgs/azure-logout-url.png" width="500px">
 
 And the "Single Logout Service Endpoint" SAML 2.0 integration parameter derived in the following way,
 
@@ -46,7 +46,7 @@ https://<demisto-url>/saml-logout
 
 There is no need to check the following parameter or specify nameID format
 
-<img src="name-id-not-needed" width="500px">
+<img src="name-id-not-needed.png" width="500px">
 
 SLO should then function as expected.
 
