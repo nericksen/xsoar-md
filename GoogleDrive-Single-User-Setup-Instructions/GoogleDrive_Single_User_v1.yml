@@ -1,0 +1,387 @@
+commonfields:
+  id: GoogleDrive (Single User)
+  version: -1
+vcShouldKeepItemLegacyProdMachine: false
+name: GoogleDrive (Single User)
+display: GoogleDrive (Single User)
+category: IT Services
+image: data:image/png;base64,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
+description: Google Drive allows users to store files on their servers, synchronize
+  files across devices, and share files. This integration helps you to create a new
+  drive, query past activity, and view change logs performed by the users. Use a single
+  user account with OAuth2.0 access (as opposed to domain wide delegation)
+detaileddescription: "# Configure an API account on Google Drive\nConfigure a service
+  account and retrieve its key in JSON format by following the steps mentioned here:
+  [https://developers.google.com/identity/protocols/oauth2/service-account#creatinganaccount](https://developers.google.com/identity/protocols/oauth2/service-account#creatinganaccount).\nProvide
+  at least one of the following scopes for each command.\n### Commands and their scope\n*
+  ***google-drive-create*** \n\t*  https://www.googleapis.com/auth/drive \n* ***google-drive-activity-list***
+  \n\t* https://www.googleapis.com/auth/drive.activity \n\t* https://www.googleapis.com/auth/drive.activity.readonly
+  \n* ***google-drive-changes-list*** \n\t* https://www.googleapis.com/auth/drive
+  \  \n\t* https://www.googleapis.com/auth/drive.file\n\t* https://www.googleapis.com/auth/drive.readonly\n\t*
+  https://www.googleapis.com/auth/drive.metadata.readonly \n\t* https://www.googleapis.com/auth/drive.appdata\n\t*
+  https://www.googleapis.com/auth/drive.metadata\n\t* https://www.googleapis.com/auth/drive.photos.readonly\n\n\n---\n[View
+  Integration Documentation](https://xsoar.pan.dev/docs/reference/integrations/google-drive)"
+configuration:
+- display: Fetch incidents
+  name: isFetch
+  type: 8
+  required: false
+- display: User's OAuth JSON
+  name: user_oauth_client_json
+  type: 4
+  required: true
+- display: Incident type
+  name: incidentType
+  type: 13
+  required: false
+- display: Trust any certificate (not secure)
+  name: insecure
+  type: 8
+  required: false
+- display: Use system proxy settings
+  name: proxy
+  type: 8
+  required: false
+- display: Authorization Code
+  name: authorization_code
+  type: 4
+  required: true
+- display: OAuth Redirect URI
+  name: redirect_uri
+  type: 0
+  required: true
+- display: Authentication Scopes (comma separated)
+  name: scopes
+  defaultvalue: https://www.googleapis.com/auth/drive.metadata,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.file
+  type: 12
+  required: true
+- display: State Passthrough Value
+  name: state_parameter
+  defaultvalue: state_parameter_passthrough_value
+  type: 0
+  required: true
+  additionalinfo: This is a arbitrary value used to validate the session creation
+script:
+  script: |
+    import json
+
+    import google.oauth2.credentials
+    import google_auth_oauthlib.flow
+
+    from googleapiclient.discovery import build
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+
+    SCOPES = demisto.params().get("scopes").split(",")
+
+    def safe_load_non_strict_json(json_string: str) -> Dict[str, Any]:
+        """
+        Loads the JSON with non-strict mode.
+
+        :param json_string: json string to parse.
+        :return: Parsed dictionary.
+        :raises ValueError: If there is any other issues while parsing json.
+        """
+        try:
+            if json_string:
+                return json.loads(json_string, strict=False)
+            return {}
+        except ValueError:
+            raise ValueError(COMMON_MESSAGES['JSON_PARSE_ERROR'])
+
+    def generate_oauth_creds(params):
+        code = params.get("authorization_code")
+        user_account_dict = safe_load_non_strict_json(params.get('user_oauth_client_json'))
+
+        creds = None
+
+        integration_context = demisto.getIntegrationContext()
+        #demisto.results(f"IntegrationContext: {integration_context}")
+
+        token = integration_context.get("token", "")
+        if token:
+            token_json = safe_load_non_strict_json(token)
+            creds = Credentials.from_authorized_user_info(token_json, SCOPES)
+        # If there are no (valid) credentials available, let the user log in.
+        if not creds or not creds.valid:
+            if creds and creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            else:
+                flow = google_auth_oauthlib.flow.Flow.from_client_config(
+                    user_account_dict,
+                    scopes=SCOPES,
+                    state=params.get("state_parameter")
+                )
+                flow.redirect_uri = params.get("redirect_uri")
+                token = flow.fetch_token(code=code)
+                creds = flow.credentials
+            # Save the credentials for the next run
+            demisto.setIntegrationContext({'token': creds.to_json()})
+
+        return creds
+
+
+    def list_files_command(params, args):
+
+        creds = generate_oauth_creds(params)
+
+        #demisto.results(f"Valid Creds: {creds.valid}")
+        drive = build('drive', 'v3', credentials=creds)
+
+        result = []
+        page_token = None
+        while True:
+            try:
+                param = {
+                    "driveId": args.get("driveId", None),
+                    "includeItemsFromAllDrives": True,
+                    "corpora": args.get("corpora", None),
+                    "supportsAllDrives": True,
+                    "q": args.get("q", None)
+                }
+                if page_token:
+                    param['pageToken'] = page_token
+                files = drive.files().list(**param).execute()
+
+                result.extend(files['files'])
+                page_token = files.get('nextPageToken')
+                if not page_token:
+                    break
+            except Exception as e:
+                demisto.results(f'An error occurred: {e}')
+                break
+
+        readable_output = tableToMarkdown("GDrive Files", result, headerTransform=pascalToSpace,
+                                          removeNull=True)
+
+        return CommandResults(
+            outputs={ 'GoogleDrive.Files(val.id == obj.id)' : result },
+            readable_output=readable_output,
+            raw_response=result
+        )
+
+
+    def list_drives_command(params, args):
+
+        creds = generate_oauth_creds(params)
+
+        #demisto.results(f"Valid Creds: {creds.valid}")
+        drive = build('drive', 'v3', credentials=creds)
+
+        result = []
+        page_token = None
+        while True:
+            try:
+                param = {
+                    "q": args.get("q", None),
+                    "useDomainAdminAccess": argToBoolean(args.get("useDomainAdminAccess", False))
+                }
+                if page_token:
+                    param['pageToken'] = page_token
+                files = drive.drives().list(**param).execute()
+
+                result.extend(files["drives"])
+                page_token = files.get('nextPageToken')
+                if not page_token:
+                    break
+            except Exception as e:
+                demisto.results(f'An error occurred: {e}')
+                break
+
+        readable_output = tableToMarkdown("GDrive Drives", result, headerTransform=pascalToSpace,
+                                          removeNull=True)
+
+        return CommandResults(
+            outputs_prefix='GoogleDrive.Drives',
+            outputs_key_field='id',
+            outputs=result,
+            readable_output=readable_output,
+            raw_response=result
+        )
+
+
+    def get_file_metadata_command(params,args):
+        creds = generate_oauth_creds(params)
+        service = build('drive', 'v3', credentials=creds)
+
+        param = {
+            "fileId": args.get("fileId"),
+            "supportsAllDrives": True
+        }
+
+        result = service.files().get(**param).execute()
+        readable_output = tableToMarkdown("GDrive File Metadata", result, headerTransform=pascalToSpace,
+                                          removeNull=True)
+
+        return CommandResults(
+            outputs={ 'GoogleDrive.Files(val.id == obj.id)' : result },
+            readable_output=readable_output,
+            raw_response=result
+        )
+
+
+    def get_drive_metadata_command(params,args):
+        creds = generate_oauth_creds(params)
+        return None
+
+    def list_permissions_command(params,args):
+        creds = generate_oauth_creds(params)
+
+        #demisto.results(f"Valid Creds: {creds.valid}")
+        service = build('drive', 'v3', credentials=creds)
+
+        result = []
+        page_token = None
+        while True:
+            try:
+                param = {
+                    "fileId": args.get("fileId", None),
+                    "useDomainAdminAccess": argToBoolean(args.get("useDomainAdminAccess", False)),
+                    "supportsAllDrives": True
+                }
+                if page_token:
+                    param['pageToken'] = page_token
+                permissions = service.permissions().list(**param).execute()
+                permissions['fileId'] = param['fileId']
+                result.extend(permissions["permissions"])
+                page_token = permissions.get('nextPageToken')
+                if not page_token:
+                    break
+            except Exception as e:
+                demisto.results(f'An error occurred: {e}')
+                break
+
+        readable_output = tableToMarkdown("GDrive Permissions", result, headerTransform=pascalToSpace,
+                                          removeNull=True)
+        ec = {
+            'id': param['fileId'],
+            'Permissions': result
+        }
+        return CommandResults(
+            outputs={ "GoogleDrive.Files(val.id == obj.id)": ec },
+            readable_output=readable_output,
+            raw_response=result
+        )
+
+
+    def update_permissions_command(params,args):
+        creds = generate_oauth_creds(params)
+        return None
+
+    def delete_permissions_command(params,args):
+        creds = generate_oauth_creds(params)
+        service = build('drive', 'v3', credentials=creds)
+
+        param = {
+            "fileId": args.get("fileId"),
+            "permissionId": args.get("permissionId"),
+            "supportsAllDrives": True,
+            "useDomainAdminAccess": argToBoolean(args.get("useDomainAdminAccess", False))
+        }
+        status = service.permissions().delete(**param).execute()
+
+        return f"Permission {args['permissionId']} Deleted for {args['fileId']}"
+
+
+    def main() -> None:
+        """
+        PARSE AND VALIDATE INTEGRATION PARAMS
+        """
+
+        # Commands dictionary
+        commands: Dict[str, Callable] = {
+            'google-drive-list-files': list_files_command,
+            'google-drive-get-file-metadata': get_file_metadata_command,
+            'google-drive-list-permissions': list_permissions_command,
+            'google-drive-list-drives': list_drives_command,
+            'google-drive-delete-permission': delete_permissions_command
+        }
+        command = demisto.command()
+        demisto.info(f'Command being called is {command}')
+
+        try:
+            params = demisto.params()
+            args = demisto.args()
+            # This is the call made when pressing the integration Test button.
+            if demisto.command() == 'test-module':
+                demisto.results("Please use: !google-drive-test-auth to test authentication")
+            elif demisto.command() == "google-drive-test-auth":
+                creds = generate_oauth_creds(params)
+                service = build('drive', 'v3', credentials=creds)
+                demisto.results(f"Successful Authentication: {creds.valid}")
+            elif command in commands:
+                return_results(commands[command](params, args))
+
+        # Log exceptions
+        except Exception as e:
+            demisto.error(traceback.format_exc())
+            return_error(f'Error: {str(e)}')
+
+
+    if __name__ in ('__main__', '__builtin__', 'builtins'):
+        main()
+  type: python
+  commands:
+  - name: google-drive-get-file-metadata
+    arguments:
+    - name: fileId
+      required: true
+      description: The fileId to get metadata for
+    description: Retrieve the metadata for a file in Google Drive
+  - name: google-drive-list-files
+    arguments:
+    - name: q
+      description: The query string to use
+    - name: driveId
+      description: The driveId to search for items in
+    - name: corpora
+      description: Bodies of items (files/documents) to which the query applies. Supported
+        bodies are 'user', 'domain', 'drive' and 'allDrives'. Prefer 'user' or 'drive'
+        to 'allDrives' for efficiency.
+    description: List all files in a drive
+  - name: google-drive-list-permissions
+    arguments:
+    - name: fileId
+      required: true
+      description: The fileID to get permissions for
+    - name: useDomainAdminAccess
+      description: Issue the request as a domain administrator; if set to true, then
+        the requester will be granted access if the file ID parameter refers to a
+        shared drive and the requester is an administrator of the domain to which
+        the shared drive belongs.
+    description: List the permissions associated with a particular file
+  - name: google-drive-list-drives
+    arguments:
+    - name: q
+      description: The query to use when listing the drives
+    - name: useDomainAdminAccess
+      auto: PREDEFINED
+      predefined:
+      - "True"
+      - "False"
+      description: Issue the request as a domain administrator; if set to true, then
+        all shared drives of the domain in which the requester is an administrator
+        are returned.
+    description: List the Google Drives
+  - name: google-drive-delete-permission
+    arguments:
+    - name: fileId
+      required: true
+      description: The fileID of the permission to delete
+    - name: permissionId
+      required: true
+      description: The permissionId to delete
+    - name: useDomainAdminAccess
+      description: Issue the request as a domain administrator; if set to true, then
+        the requester will be granted access if the file ID parameter refers to a
+        shared drive and the requester is an administrator of the domain to which
+        the shared drive belongs.
+    description: Delete permission of a file
+  - name: google-drive-test-auth
+    arguments: []
+    description: Command to test the authentication and token generation
+  dockerimage: googleoauth
+  isfetch: true
+  runonce: false
+  subtype: python3
+sourcemoduleid: GoogleDrive
