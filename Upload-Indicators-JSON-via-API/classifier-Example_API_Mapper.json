@@ -1,0 +1,42 @@
+{
+	"brands": null,
+	"defaultIncidentType": "",
+	"description": "",
+	"feed": true,
+	"fromServerVersion": "",
+	"id": "0df5e403-8084-45bb-87e2-8fb36e1a2a91",
+	"incidentSamples": null,
+	"indicatorSamples": null,
+	"instanceIds": null,
+	"itemVersion": "",
+	"keyTypeMap": {},
+	"locked": false,
+	"logicalVersion": 1,
+	"mapping": {
+		"dbot_classification_incident_type_all": {
+			"dontMapEventToLabels": false,
+			"internalMapping": {
+				"Country Code": {
+					"complex": null,
+					"simple": "Country"
+				}
+			}
+		}
+	},
+	"name": "Example API Mapper",
+	"nameRaw": "Example API Mapper",
+	"packID": "",
+	"propagationLabels": [
+		"all"
+	],
+	"sourceClassifierId": "",
+	"system": false,
+	"toServerVersion": "",
+	"transformer": {
+		"complex": null,
+		"simple": ""
+	},
+	"type": "mapping-incoming",
+	"unclassifiedCases": null,
+	"version": -1
+}
