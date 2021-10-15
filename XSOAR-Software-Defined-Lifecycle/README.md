@@ -39,7 +39,7 @@ This methodology has a lot of advantages compared to manually moving content bet
 Content can be reviewed and verified before being pushed to production.
 Git commits are used for each release and can therefore be audited.
 
-<img src="imgs/remote-repositories.png" width="500px" />
+<img src="imgs/remote-repo-only.png" width="500px" />
 
 ### Content Management Pack
 The requirement to leverage a CI/CD pipeline during the content release process can be further improved by leveraging standard coding tools and practices.
