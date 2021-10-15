@@ -66,7 +66,7 @@ An end user can then create the pack structure before uploading to the git repos
 It is also possible to use a Git integration (such as GitHub or Gitlab) in XSOAR to push the appropriate files and pack structure.
 This playbook would have to be created as it does not exist today.
 
-<img src="imgs/Content-Management-Pack-Workflow.png" width="500px" />
+<img src="imgs/Content-Management-Pack-Workflow-2.png" width="500px" />
 
 
 
