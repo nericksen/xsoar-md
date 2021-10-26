@@ -8,7 +8,7 @@ For example to monitor the average CPU usage it is possible to query the corresp
 
 
 ```
-curl -X POST 'https://internal-pan-mt-m.demisto.works/v2/statistics/widgets/query' -H 'content-type: application/json' -H 'accept: application/json' -H 'Authorization: 07731BCA344C90BD4C3E5EAABBB608D3' --data-binary '{
+curl -X POST 'https://<xsoar>/v2/statistics/widgets/query' -H 'content-type: application/json' -H 'accept: application/json' -H 'Authorization: putYaOwnApiKey' --data-binary '{
  "id": "cpu-current-usage",
  "version": -1,
  "fromVersion": "5.0.0",
