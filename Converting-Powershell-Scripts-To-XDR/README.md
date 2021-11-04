@@ -1,4 +1,4 @@
-# Powershell Scripts from XDR
+# Powershell Scripts Run From XDR
 
 XDR has a powerful ability to run Python scripts on an endpoint.
 Many users from the Windows perspective use Powershell today.
