@@ -26,7 +26,7 @@ def run():
         result["PSScript"] = None 
     
   except Exception as e:
-    sys.stderr.write(f"Failed: {e}}")
+    sys.stderr.write(f"Failed: {e}")
   
   # Remove the tmp PS file
   os.remove("C:\\Users\\Public\\tmp.ps1")
