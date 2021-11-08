@@ -1,24 +1,18 @@
-import subprocess, sys
+import subprocess
+import sys
 import os
 
-def run(exclude_user):
+def run():
 
   ps = """
-  $excludeUser = "%s"
-
-  $allUsers = Get-LocalUser
-
-  foreach ($user in $allUsers.Name) {
-    if($user -ne $excludeUser) {
-      Get-LocalUser $user | Disable-LocalUser
-    }
-  }
   Get-LocalUser
-  """ % exclude_user
+  """
 
+  # Write the PS script to a local tmp file
   with open("C:\\Users\\Public\\tmp.ps1", "w") as f:
     f.write(ps)
 
+  # Execute the tmp PS script
   result = {}
   try:
     with subprocess.Popen(["powershell.exe", "C:\\Users\\Public\\tmp.ps1"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True) as p:
@@ -31,8 +25,8 @@ def run(exclude_user):
       else:
         result["PSScript"] = None 
     
-  except Exception as e:
-    sys.stderr.write(f"Failed: {e}")
+  except Exception:
+    sys.stderr.write(f"Failed open command: <{command}>, error: {traceback.format_exc()}")
   
   # Remove the tmp PS file
   os.remove("C:\\Users\\Public\\tmp.ps1")
