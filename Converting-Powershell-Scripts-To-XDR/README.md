@@ -96,6 +96,7 @@ The contents of the Powershell file should be copied and put into the Python str
 The file can then be uploaded into XDR >> Response >> Action Center under "Available Scripts Library" by selecting "New Script".
 The complete example is provided in `get-users.py` in this repo.
 
+<img src="imgs/get-users-run.png" width="500px" />
 
 ## Advanced Example: Disabling Users and Passing Script Arguments
 Attached to this repo is `disable-users.py` script. It can be uploaded into 
@@ -107,7 +108,11 @@ A user to exclude from the disabling is passed as an argument.
 
 The entry point should be specified as the `run` function when the script
 is uploaded to XDR.
+<img src="imgs/script-setup.png" width="500px" />
+
 The arguments passed to the `run` function in the Python function can then be passed via the XDR console.
+
+<img src="imgs/disable-users-argument.png" width="500px" />
 
 Arguments can be passed to the PS script using `%s` string formatting syntax in Python.
 ```
@@ -134,3 +139,4 @@ def run(exclude_user):
 ```
 
 These arguments are passed to the Python run function and then utilized in order of there appearence in the `ps` string. Multiple arguments are seperated with a `,`.
+<img src="imgs/disable-users-run.png" width="500px" />
