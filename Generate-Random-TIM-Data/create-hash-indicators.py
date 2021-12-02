@@ -8,8 +8,8 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 COUNT = 10
-BASE_URL = "https://<xsoar-server-url>:443"
-API_KEY = "<API_KEY>"
+BASE_URL = "https://<xsoar-url>:443"
+API_KEY = "<api-key>"
 
 
 hashes = []
@@ -48,16 +48,32 @@ body = {
     }    
 }
 
+session = requests.Session()
+
+success_counter = 0
+failure_counter = 0
+
+print("Generating Random Hashes")
 for h in hashes:
     body["indicator"]["value"] = h
 
     try:
-        res = requests.post(f"{BASE_URL}/indicator/create", headers=headers, json=body, verify=False)
+        #res = requests.post(f"{BASE_URL}/indicator/create", headers=headers, json=body, verify=False)
+        res = session.post(f"{BASE_URL}/indicator/create", headers=headers, json=body, verify=False)
         if res.ok:
-            print(f"Success: {h} ")
+            #print(f"Success: {h} ")
+            print(".", end="", flush=True)
+            success_counter += 1
+            continue
             #print(res.json())
         else:
             print(f"Failure: {h} Status_Code: {res.status_code}")
+            failure_counter += 1
     except Exception as e:
         print(f"Failure: {h} Error: {e}")
+        failure_counter += 1
         continue
+
+print("\n")
+print(f"Success: {success_counter}")
+print(f"Failed: {failure_counter}")
