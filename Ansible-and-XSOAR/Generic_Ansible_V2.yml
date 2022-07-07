@@ -1,0 +1,450 @@
+commonfields:
+  id: Generic Ansible V2
+  version: -1
+vcShouldKeepItemLegacyProdMachine: false
+name: Generic Ansible V2
+display: Generic Ansible V2
+category: IT Services
+image: data:image/png;base64,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
+description: Generic Ansible module execution
+detaileddescription: |
+  # Generic Ansible
+  Run Ansible Modules and playbooks from XSOAR
+
+  ## Credentials
+
+  This integration supports a number of methods of authenticating with the network device:
+
+  1. Username & Password entered into the integration
+  2. Username & Password credential from the XSOAR credential manager
+  3. Username and SSH Key from the XSOAR credential manager
+
+
+
+  ## Testing
+
+  Provide the Test Host IP for the test button to run an Ansible "Ping" against and ensure everything is operational.
+configuration:
+- display: Username
+  name: creds
+  type: 9
+  required: true
+  additionalinfo: The credentials to associate with the instance. SSH keys can be
+    configured using the credential manager.
+- display: Default SSH Port
+  name: port
+  defaultvalue: "22"
+  type: 0
+  required: true
+  additionalinfo: The default port to use if one is not specified in the commands
+    `host` argument.
+- display: Concurrency Factor
+  name: concurrency
+  defaultvalue: "4"
+  type: 0
+  required: true
+  additionalinfo: If multiple hosts are specified in a command, how many hosts should
+    be interacted with concurrently.
+- display: Test Host IP
+  name: testhost
+  type: 0
+  required: false
+  additionalinfo: An IP to use for the test button Ping test
+script:
+  script: |
+    register_module_line('AnsibleCiscoIOS', 'start', __line__())
+    import traceback
+    import ssh_agent_setup
+
+
+
+    # Import Generated code
+
+    ### GENERATED CODE ###: from AnsibleApiModule import *  # noqa: E402
+    # This code was inserted in place of an API module.
+    register_module_line('AnsibleApiModule', 'start', __line__(), wrapper=-3)
+
+
+    import ansible_runner  # pylint: disable=E0401
+    import json
+    from typing import Dict, cast, List, Union, Any
+    import shutil
+
+    # Dict to Markdown Converter adapted from https://github.com/PolBaladas/torsimany/
+
+
+    def dict2md(json_block: Union[Dict[str, Union[dict, list]], List[Union[str, dict, list, float]], float], depth: int = 0):
+        markdown = ""
+
+        if isinstance(json_block, dict):
+            markdown = parse_dict(json_block, depth)
+        if isinstance(json_block, list):
+            markdown += parse_list(json_block, depth)
+        return markdown
+
+
+    def parse_dict(d: Dict[str, Union[dict, list]], depth: int):
+        markdown = ""
+
+        # In the case of a dict of dicts/lists, we want to show the "leaves" of the tree first.
+        # This will improve readability by avoiding the scenario where "leaves" are shown in between
+        # "branches", resulting in their relation to the header to become unclear to the reader.
+
+        for k in d:
+            if not isinstance(d[k], (dict, list)):
+                markdown += build_value_chain(k, d.get(k), depth + 1)
+
+        for k in d:
+            if isinstance(d[k], (dict, list)):
+                markdown += add_header(k, depth + 1)
+                markdown += dict2md(d[k], depth + 1)
+        return markdown
+
+
+    def parse_list(rawlist: List[Union[str, dict, list, float]], depth: int):
+        markdown = ""
+        default_header_value = "list"
+        for value in rawlist:
+            if not isinstance(value, (dict, list)):
+                index = rawlist.index(value)
+                item_depth = depth + 1  # since a header was added previously items should be idented one
+                markdown += build_value_chain(index, value, item_depth)
+            else:
+                # It makes list  more readable to have a header of some sort
+                header_value = find_header_in_dict(value)
+                if header_value is None:
+                    header_value = default_header_value
+                markdown += add_header(header_value, depth)
+                if isinstance(value, dict):
+                    markdown += parse_dict(value, depth)
+                if isinstance(value, list):
+                    markdown += parse_list(value, depth)
+        return markdown
+
+
+    def find_header_in_dict(rawdict: Union[Dict[Any, Any], List[Any]]):
+        header = None
+        # Finds a suitible value to use as a header
+        if not isinstance(rawdict, dict):
+            return header  # Not a dict, nothing to do
+
+        id_search = [val for key, val in rawdict.items() if 'id' in key]
+        name_search = [val for key, val in rawdict.items() if 'name' in key]
+
+        if id_search:
+            header = id_search[0]
+        if name_search:
+            header = name_search[0]
+
+        return header
+
+
+    def build_header_chain(depth: int):
+        list_tag = '* '
+        htag = '#'
+        tab = "  "
+
+        chain = (tab * depth) + list_tag * (bool(depth)) + htag * (depth + 1) + ' value\n'
+        return chain
+
+
+    def build_value_chain(key: Union[int, str], value: Union[str, int, float, Dict[Any, Any], List[Any], None], depth: int):
+        tab = '  '
+        list_tag = '* '
+
+        chain = (tab * depth) + list_tag + str(key) + ": " + str(value) + "\n"
+        return chain
+
+
+    def add_header(value: str, depth: int):
+        chain = build_header_chain(depth)
+        chain = chain.replace('value', value.title())
+        return chain
+
+
+    # Remove ansible branding from results
+    def rec_ansible_key_strip(obj: Dict[Any, Any]):
+        if isinstance(obj, dict):
+            return {key.replace('ansible_', ''): rec_ansible_key_strip(val) for key, val in obj.items()}
+        return obj
+
+
+    # Convert to TitleCase, like .title() but only letters/numbers.
+    def title_case(st: str):
+        output = ''.join(x for x in st.title() if x.isalnum())
+        return output
+
+
+    def generate_ansible_inventory(args: Dict[str, Any], int_params: Dict[str, Any], host_type: str = "local"):
+        host_types = ['ssh', 'winrm', 'nxos', 'ios', 'local']
+        if host_type not in host_types:
+            raise ValueError("Invalid host type. Expected one of: %s" % host_types)
+
+        sshkey = ""
+
+        inventory: Dict[str, dict] = {}
+        inventory['all'] = {}
+        inventory['all']['hosts'] = {}
+
+        # local
+        if host_type == 'local':
+            inventory['all']['hosts']['localhost'] = {}
+            inventory['all']['hosts']['localhost']['ansible_connection'] = 'local'
+
+        # All other host types are remote
+        elif host_type in ['ssh', 'winrm', 'nxos', 'ios']:
+            hosts = args.get('host')
+            if type(hosts) is str:
+                # host arg could be csv
+                hosts = [host.strip() for host in hosts.split(',')]  # type: ignore[union-attr]
+
+            for host in hosts:  # type: ignore[union-attr]
+                new_host = {}
+                new_host['ansible_host'] = host
+
+                if ":" in host:
+                    address = host.split(':')
+                    new_host['ansible_port'] = address[1]
+                    new_host['ansible_host'] = address[0]
+                else:
+                    new_host['ansible_host'] = host
+                    if int_params.get('port'):
+                        new_host['ansible_port'] = int_params.get('port')
+
+                # Common SSH based auth options
+                if host_type in ['ssh', 'nxos', 'ios']:
+                    # SSH Key saved in credential manager selection
+                    if int_params.get('creds', {}).get('credentials').get('sshkey'):
+                        username = int_params.get('creds', {}).get('credentials').get('user')
+                        sshkey = int_params.get('creds', {}).get('credentials').get('sshkey')
+
+                        new_host['ansible_user'] = username
+
+                    # Password saved in credential manager selection
+                    elif int_params.get('creds', {}).get('credentials').get('password'):
+                        username = int_params.get('creds', {}).get('credentials').get('user')
+                        password = int_params.get('creds', {}).get('credentials').get('password')
+
+                        new_host['ansible_user'] = username
+                        new_host['ansible_password'] = password
+
+                    # username/password individually entered
+                    else:
+                        username = int_params.get('creds', {}).get('identifier')
+                        password = int_params.get('creds', {}).get('password')
+
+                        new_host['ansible_user'] = username
+                        new_host['ansible_password'] = password
+
+                    # ssh specific become options
+                    if host_type == 'ssh':
+                        new_host['ansible_become'] = int_params.get('become')
+                        new_host['ansible_become_method'] = int_params.get('become_method')
+                        if int_params.get('become_user'):
+                            new_host['ansible_become_user'] = int_params.get('become_user')
+                        if int_params.get('become_password'):
+                            new_host['ansible_become_pass'] = int_params.get('become_password')
+
+                    # ios specific
+                    if host_type == 'ios':
+                        new_host['ansible_connection'] = 'network_cli'
+                        new_host['ansible_network_os'] = 'ios'
+                        new_host['ansible_become'] = 'yes'
+                        new_host['ansible_become_method'] = 'enable'
+                        new_host['ansible_become_password'] = int_params.get('enable_password')
+                        inventory['all']['hosts'][host] = new_host
+
+                    # nxos specific
+                    elif host_type == 'nxos':
+                        new_host['ansible_connection'] = 'network_cli'
+                        new_host['ansible_network_os'] = 'nxos'
+                        new_host['ansible_become'] = 'yes'
+                        new_host['ansible_become_method'] = 'enable'
+                        inventory['all']['hosts'][host] = new_host
+
+                # winrm
+                elif host_type == 'winrm':
+                    # Only two credential options
+                    # Password saved in credential manager selection
+                    if int_params.get('creds', {}).get('credentials').get('password'):
+                        username = int_params.get('creds', {}).get('credentials').get('user')
+                        password = int_params.get('creds', {}).get('credentials').get('password')
+
+                        new_host['ansible_user'] = username
+                        new_host['ansible_password'] = password
+
+                    # username/password individually entered
+                    else:
+                        username = int_params.get('creds', {}).get('identifier')
+                        password = int_params.get('creds', {}).get('password')
+
+                        new_host['ansible_user'] = username
+                        new_host['ansible_password'] = password
+
+                    new_host['ansible_connection'] = "winrm"
+                    new_host['ansible_winrm_transport'] = "ntlm"
+                    new_host['ansible_winrm_server_cert_validation'] = "ignore"
+
+                inventory['all']['hosts'][host] = new_host
+
+        return inventory, sshkey
+
+
+    def generic_ansible(integration_name: str, command: str,
+                        args: Dict[str, Any], int_params: Dict[str, Any], host_type: str,
+                        creds_mapping: Dict[str, str] = None, inventory: str = None, module_args: str = None) -> CommandResults:
+        """Run a Ansible module and return the results as a CommandResult.
+
+        Keyword arguments:
+        integration_name -- the name of the XSOAR integration. Used for context output structure
+        command -- the ansible module to run
+        args -- the XSOAR command args. Literally the demisto.args(). The args provided need to match the
+                ansible module args, as well as include the arg "host" if the module is one that connects
+                to a host.
+        int_params -- the integration parameters. These will contain args that are integration wide.
+                      They will passed to the the ansible module as args, with exception of credentials,
+                      these will be used to build the ansible inventory.
+        host_type -- the type of host that is being managed. The following host types are supported:
+                     * ssh -- Linux or Unix variant managed over ssh
+                     * winrm -- Windows
+                     * nxos -- Cisco NX-OS based network device
+                     * ios -- Cisco IOS based network device
+                     * local  -- this indicates that the command should be executed locally.
+                                 Mostly used by modules that connect out to cloud services.
+        creds_mapping -- A mapping for the 'creds' param names to expected ansible param names
+        """
+
+        readable_output = ""
+        sshkey = ""
+        fork_count = 1   # default to executing against 1 host at a time
+
+        if args.get('concurrency'):
+            fork_count = cast(int, args.get('concurrency'))
+
+        # generate ansible host inventory
+        #if not inventory: # ie no external file given as inventory
+        if not inventory:
+            inventory, sshkey = generate_ansible_inventory(args=args, host_type=host_type, int_params=int_params)
+        else:
+            sshkey = int_params.get('creds', {}).get('credentials').get('sshkey')
+
+        playbookID = demisto.args().get("playbookID", None)
+
+        if playbookID:
+            raw_path = demisto.getFilePath(playbookID)
+            playbook_path = raw_path['path']
+            shutil.copyfile(playbook_path, f"tmp/playbook.yml")
+
+            r = ansible_runner.run(inventory=inventory, host_pattern='all', quiet=True, playbook="tmp/playbook.yml", omit_event_data=False, json_mode=True, ssh_key=sshkey, forks=fork_count)
+            demisto.results(r.stdout.read())
+        else:
+            r = ansible_runner.run(inventory=inventory, host_pattern='all', module=command, quiet=True, omit_event_data=False, json_mode=True, ssh_key=sshkey, module_args=module_args, forks=fork_count)
+        #demisto.results(r.stdout.read())
+        results = []
+        outputs_key_field = ''
+
+        entry = []
+        for each_host_event in r.events:
+            # Troubleshooting
+            # demisto.log("%s: %s\n" % (each_host_event['event'], each_host_event))
+
+            if each_host_event['event'] in ["runner_on_ok", "runner_on_unreachable", "runner_on_failed"]:
+                entry.append(each_host_event)
+
+
+        return CommandResults(
+            readable_output=tableToMarkdown("Results", entry),
+            outputs_prefix=integration_name + '.' + title_case(command),
+            outputs_key_field=outputs_key_field,
+            outputs=entry
+        )
+
+
+
+    register_module_line('AnsibleApiModule', 'end', __line__(), wrapper=1)
+    ### END GENERATED CODE ###
+
+    #host_type = 'ios'
+
+    # MAIN FUNCTION
+
+    def main() -> None:
+        """main function, parses params and runs command functions
+
+        :return:
+        :rtype:
+        """
+
+        # SSH Key integration requires ssh_agent to be running in the background
+        ssh_agent_setup.setup()
+
+        # Common Inputs
+        command = demisto.command()
+        args = demisto.args()
+        int_params = demisto.params()
+        inventory = args.get("inventory", None)
+        module_args = args.get("module_args", None)
+        module = args.get("module")
+        host_type = args.get("host_type", "ssh")
+
+        try:
+
+            if command == 'test-module':
+                # This is the call made when pressing the integration Test button.
+                #result = generic_ansible('AnsibleGeneric', 'ping', args, int_params, host_type)
+                args = {"host": demisto.params().get("testhost")}
+                result = generic_ansible('AnsibleGeneric', 'ping', args, int_params, host_type='ssh', inventory=inventory, module_args=module_args)
+
+                if result:
+                    return_results('ok')
+                else:
+                    return_results(result)
+
+            elif command == 'ansible-run':
+
+                return_results(generic_ansible('AnsibleGeneric', module, args, int_params, host_type=host_type, inventory=inventory, module_args=module_args))
+
+        # Log exceptions and return errors
+        except Exception as e:
+            demisto.error(traceback.format_exc())  # print the traceback
+            return_error(f'Failed to execute {command} command.\nError:\n{str(e)}')
+
+
+    # ENTRY POINT
+
+
+    if __name__ in ('__main__', '__builtin__', 'builtins'):
+        main()
+
+    register_module_line('AnsibleCiscoIOS', 'end', __line__())
+  type: python
+  commands:
+  - name: ansible-run
+    arguments:
+    - name: host
+      description: Hostname or IP of target. Optionally the port can be specified
+        using :PORT. If multiple targets are specified using an array, the integration
+        will use the configured concurrency factor for high performance.  Alternatively
+        use "inventory" arg.
+      isArray: true
+    - name: module_args
+      description: The string of args to pass to Ansible module
+    - name: module
+      description: The module to run ie "shell"
+    - name: inventory
+      description: An optional inventory string. Can be read from XSOAR list with
+        ${lists.inventory} or similar
+    - name: host_type
+      auto: PREDEFINED
+      predefined:
+      - nxos
+      - ssh
+      - ios
+      - winrm
+      - local
+      description: The host type. Default is "ssh"
+    description: Run Generic Ansible Module
+  dockerimage: demisto/ansible-runner:1.0.0.24037
+  runonce: false
+  subtype: python3
+sourcemoduleid: AnsibleCiscoIOS
