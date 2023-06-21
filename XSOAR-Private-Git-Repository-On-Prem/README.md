@@ -96,7 +96,7 @@ Add a file or change the README, commit and push to remote repo. Then enter pass
 NOTE: Better solution, add SSH keys for the user and SSH key based authentication.
 
 5. Configure the LocalContentExporter integration in XSOAR
-Add the hosted server URL and API key from the XSOAR instance into the integration parameters. Test it works.
+Add the hosted server URL and API key from the XSOAR instance into the integration parameters. Add the engine configured above. Test it works.
 Run the command `!download-local-content-zip` in the warroom to test loading all the custom content into the on premises repository.
 
 
