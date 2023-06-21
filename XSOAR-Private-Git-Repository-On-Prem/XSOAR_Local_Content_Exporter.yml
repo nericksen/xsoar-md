@@ -1,0 +1,79 @@
+id: 21d8e2cd-9a5d-4f61-802c-17a8f084aa3b
+version: 5
+vcShouldKeepItemLegacyProdMachine: false
+name: XSOAR Local Content Exporter
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: 98bafea4-c391-4dfc-8a41-609ea1ffb9cf
+    type: start
+    task:
+      id: 98bafea4-c391-4dfc-8a41-609ea1ffb9cf
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    separatecontext: false
+    continueonerrortype: ""
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+  "1":
+    id: "1"
+    taskid: eeec768b-c03d-4428-8f8f-2d709a97fb09
+    type: regular
+    task:
+      id: eeec768b-c03d-4428-8f8f-2d709a97fb09
+      version: -1
+      name: Download Local ZIP and push to Git
+      description: This command uses the demisto-api to pull down a local content
+        zip export
+      script: '|||download-local-content-zip'
+      type: regular
+      iscommand: true
+      brand: ""
+    separatecontext: false
+    continueonerrortype: ""
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 190
+        }
+      }
+    note: false
+    timertriggers: []
+    ignoreworker: false
+    skipunavailable: false
+    quietmode: 0
+    isoversize: false
+    isautoswitchedtoquietmode: false
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 235,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []
