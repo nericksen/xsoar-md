@@ -43,7 +43,7 @@ content in a private GIT repository on premise. This may be accomplished using a
 NOTE: in the following example BitBucket will be used, but any on premises git based system can be used.
 
 
-1. Create a linux based XSOAR engine instance on premises which has network access to the Gitlab instance. When you run the installer be sure to specify `-tools=false`.
+1. Create a linux based XSOAR engine instance on premises which has network access to the BitBucket instance. When you run the installer be sure to specify `-tools=false`.
 
 
 ```
@@ -66,10 +66,10 @@ sudo python -m pip install demistoapi
 3. Add shell for demisto user in `/etc/passwd`
 
 ```
-demisto:x:996:993::/home/demisto:/bin/bash
+demisto:x:111:111::/home/demisto:/bin/bash
 ```
 
-Add git email and user name (should match setup in on perm git instance)
+Add git email and user name (should match setup in on prem BitBucket git instance)
 
 ```
 git config --global user.email "you@example.com"
