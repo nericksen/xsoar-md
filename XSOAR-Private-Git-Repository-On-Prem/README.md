@@ -69,6 +69,12 @@ sudo python -m pip install demistoapi
 demisto:x:111:111::/home/demisto:/bin/bash
 ```
 
+Change to the demisto user
+
+```
+sudo su demisto
+```
+
 Add git email and user name (should match setup in on prem BitBucket git instance)
 
 ```
