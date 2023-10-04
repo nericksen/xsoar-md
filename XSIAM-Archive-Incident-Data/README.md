@@ -1,6 +1,6 @@
 # XSIAM Data Archiving
 
-Goal: to pull case details from Cortex XSOAR or XSIAM via API and store in another location. 
+**Goal**: to pull case details from Cortex XSOAR or XSIAM via API and store in another location. 
 
 The examples below are curl commands for pulling incident and alert data from XSIAM.  The same API calls can be applied to XSOAR 8 instances (except those which are specific to XSIAM data types)
 
@@ -54,7 +54,7 @@ Exact incident types can be filtered when requesting the data as well as their s
 You may also use Post-Processing scripts attached to incident types in XSOAR to auto submit these pieces of data to external data stores using XSOAR integrations.
 
 
-# DISCLAIMER: There are many options for exporting data but it is worth considering the operational overhead to maintain a backup system of record that has a high level of integrity with checks in place to ensure the data is actually there when needed. As such it is highly recommended to use the retention extension capabilities within the SaaS service to maintain data longer term and use these calls only as one off exceptions to the rule. These API calls also may be undocumented and unsupported and change from time to time as a result. Consult with your Account managers and Customer Support teams for guidance.
+## DISCLAIMER: There are many options for exporting data but it is worth considering the operational overhead to maintain a backup system of record that has a high level of integrity with checks in place to ensure the data is actually there when needed. As such it is highly recommended to use the retention extension capabilities within the SaaS service to maintain data longer term and use these calls only as one off exceptions to the rule. These API calls also may be undocumented and unsupported and change from time to time as a result. Consult with your Account managers and Customer Support teams for guidance.
 
 
 
